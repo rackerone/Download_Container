@@ -64,8 +64,13 @@ def download_obj(filename):
 		print e
 		return
 
-pool = multiprocessing.Pool(processes=n_processes)
-pool.map(download_obj, download_me)
-pool.close()
-pool.join()
+try:
+	pool = multiprocessing.Pool(processes=n_processes)
+	pool.map(download_obj, download_me)
+	pool.close()
+	pool.join()
+except Exception as e:
+	print e
+
+print "All Done!"
 
