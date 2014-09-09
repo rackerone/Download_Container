@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#Copyright 2013 Aaron Smith
+#Copyright 2014 Aaron Smith
 
 #Use this script to download all files in a container.  It will maintain the directory structure and
 #will skip the 0-Byte directory marker files that would cause script to crash.  Using Cyberduck, for
